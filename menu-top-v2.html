@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Menu top v2</title>
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+        <style>
+            nav{
+                height: 200px; 
+                background-color: black;
+                color: white;
+                padding: 0px;
+                line-height: 30px;
+                padding-left: 20px;
+            }
+            div{
+                padding-left: 20px;
+            }
+            a{
+                color: #EF1BD2;
+                font-size: 25px;
+                text-decoration: underline;
+            }
+            .esconder{
+                visibility: hidden;
+            }
+            .mostrar{
+                visibility: visible;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <nav id="nav">
+            <ul id="lista">
+                <a onclick="document.getElementById('lista').classList.add('esconder')">Esconder el menú</a>
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+                <li>Elemento 3</li>
+                <li>Elemento 4</li>
+                <li>Elemento 5</li>
+            </ul>
+        </nav>
+        
+        <div>
+        <a onclick="document.getElementById('lista').classList.add('mostrar')">Mostrar el menú</a>
+        </div>
+
+    </body>
+</html>

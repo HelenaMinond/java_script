@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Box Color v2</title>
+        <style>
+            #box {
+                width: 170px;
+                height: 170px;
+                background-color: red;
+            }
+        </style>
+    </head>
+
+    <body id="body">
+        <div id="box"></div>
+        <button id="green"> Verde </button>
+        <button id="yellow"> Amarillo </button>
+        <button id="red"> Rojo </button>
+
+        <button id="400px"> Tamaño 400x400 </button>
+        <button id="100px"> Tamaño 100x100 </button>
+        <script>
+            var caja = document.getElementById("box");
+                var verde = document.getElementById('green');
+                var amarillo = document.getElementById('yellow');
+                var rojo = document.getElementById('red');
+
+                var tamano400x400 = document.getElementById('400px');
+                var tamano100x100 = document.getElementById('100px');
+
+                verde.addEventListener('click', function () {
+                cambiar_color("green");
+                });
+
+                amarillo.addEventListener('click', function () {
+                cambiar_color("yellow");
+                });
+
+                rojo.addEventListener('click', function () {
+                cambiar_color("red");
+                });
+
+                tamano400x400.addEventListener('click', function () {
+                cambiar_tamano("400px");
+                });
+
+                tamano100x100.addEventListener('click', function () {
+                cambiar_tamano("100px");
+                });
+
+            function cambiar_color(color){
+            caja.style.backgroundColor = color;
+            }
+
+            function cambiar_tamano(tamano){
+            caja.style.width = tamano;
+            caja.style.height = tamano;
+            }
+        </script>
+    </body>
+</html>

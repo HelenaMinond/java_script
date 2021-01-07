@@ -1,0 +1,23 @@
+<html>
+    <!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <title>Cambiando elemento distinto v3</title>
+
+            <style>
+                .parrafo-3{
+                color:green;
+                }
+                .parrafo-4{
+                color:blue;
+                }
+            </style>
+        </head>
+        
+        <body>
+            <p id="par-1"> 1 </p>
+            <p id="par-2" onclick="document.getElementById('par-4').classList.add('parrafo-4')"> 2 </p>
+            <p id="par-3" onclick="this.classList.add('parrafo-3')"> 3 </p>
+            <p id="par-4"> 4 </p>
+        </body>
+</html>
